@@ -6,13 +6,24 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "gotham ssm";
+    src: url("../fonts/Gotham\ Book.otf");
+}
+
 body {
     color: #fff;
     font-size: 62.5%;
+    font-family: "gotham ssm";
 }
 
 .first-section {
     font-size: 1.2rem;
+}
+
+.first-section .main-top-navbar {
+    font-size: 0.9rem;
+    font-weight: 600;
 }
 
 .main-top-navbar .main-top-navbar__logo-container {
@@ -97,6 +108,10 @@ aside .left-navbar .left-navbar__items li {
     list-style: none;
 }
 
+/* aside .left-navbar .left-navbar__items li a::after {
+    content: "bkala";
+} */
+
 /* Bottom section */
 
 .first-section .column {
@@ -148,16 +163,17 @@ aside .left-navbar .left-navbar__items li {
 
 /* Second section */
 
-.second-section.align-row {
+.second-section {
+    color: #333;
+}
+
+.align-row {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
-    /* align-content: space-between; */
-    /* height: 100vh; */
 }
 
 .align-row .section-img {
-    flex: 80%;
+    flex: 77%;
 }
 
 .align-row .section-img img {
@@ -165,21 +181,44 @@ aside .left-navbar .left-navbar__items li {
 }
 
 .section-right-side {
-    color: #333;
     font-size: 1.4rem;
-    width: 20%;
-}
-
-.section-right-side {
+    flex: 23%;
     padding: 32px 40px;
 }
 
 .align-col {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .bottom-btns {
     bottom: 0;
+}
+
+.bottom-btns .align-row-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-btns a p {
+    color: #333;
+    font-size: 0.8rem;
+    height: min-content;
+    /* align-self: center; */
+    padding-left: 5px;
+}
+
+.bottom-btns .order-btn {
+    color: #333;
+    height: min-content;
+    text-align: center;
+    align-self: center;
+    border: 3px #333 solid;
+    border-radius: 20px;
+    width: 200px;
+    height: min-content;
+    padding: 8px;
+    font-size: 1rem;
 }
