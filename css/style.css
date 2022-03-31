@@ -6,12 +6,25 @@
     box-sizing: border-box;
 }
 
+body {
+    color: #fff;
+    font-size: 62.5%;
+}
+
+.first-section {
+    /* display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-direction: column; */
+    font-size: 1.4rem;
+}
+
 .main-top-navbar .logo-container {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-left: 32px;
-    /* flex: 33%; */
+    padding-left: 2.2rem;
+    width: 20%;
     /* flex-basis: 200px; */
 }
 
@@ -35,6 +48,7 @@
     background: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/d0cecbbf-1a20-4b48-b136-fb096af19515/bvlatuR/std/2880x1800/model-3-main-hero-a-desktop")
         no-repeat center center/cover;
     height: 100vh;
+    position: relative;
 }
 
 .main-top-navbar {
@@ -45,7 +59,7 @@
 }
 
 .main-top-navbar .logo {
-    width: 120px;
+    width: 9rem;
 }
 
 .main-top-navbar .models-list,
@@ -58,8 +72,13 @@
 .main-top-navbar .models-list li,
 .main-top-navbar .right-navbar-el li {
     list-style: none;
-    margin: 4px 8px;
+    margin: 4px 4px;
     padding: 0 20px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
 }
 
 /* .main-top-navbar .models-list li a,
@@ -67,3 +86,38 @@
 } */
 
 /* Side navbar */
+
+/* Header */
+
+.header h1 {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.first-section .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.car-performances {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    bottom: 0%;
+    position: absolute;
+    padding-bottom: 3rem;
+    width: 40%;
+}
+
+.performance-item {
+    margin: 1rem;
+}
+
+/* .acceleration-rate .acceleration-item , .acceleration-rate p{
+    width: 2rem;
+    position: absolute;
+
+} */
