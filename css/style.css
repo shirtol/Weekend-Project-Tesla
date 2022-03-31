@@ -12,41 +12,31 @@ body {
 }
 
 .first-section {
-    /* display: flex;
-    justify-content: flex-start;
-    align-items: stretch;
-    flex-direction: column; */
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
-.main-top-navbar .logo-container {
+.main-top-navbar .main-top-navbar__logo-container {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding-left: 2.2rem;
     width: 20%;
-    /* flex-basis: 200px; */
 }
 
-/* .main-top-navbar .logo-container .logo {
-    width: 120px;
-} */
-
-.main-top-navbar .models-list {
+.main-top-navbar .main-top-navbar__models-list {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.main-top-navbar .right-navbar-el {
+.main-top-navbar .main-top-navbar__right-navbar-el {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
 .first-section {
-    background: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/d0cecbbf-1a20-4b48-b136-fb096af19515/bvlatuR/std/2880x1800/model-3-main-hero-a-desktop")
-        no-repeat center center/cover;
+    background: url("../images/first.jpg") no-repeat center center/cover;
     height: 100vh;
     position: relative;
 }
@@ -62,15 +52,15 @@ body {
     width: 9rem;
 }
 
-.main-top-navbar .models-list,
-.main-top-navbar .right-navbar-el {
+.main-top-navbar .main-top-navbar__models-list,
+.main-top-navbar .main-top-navbar__right-navbar-el {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.main-top-navbar .models-list li,
-.main-top-navbar .right-navbar-el li {
+.main-top-navbar .main-top-navbar__models-list li,
+.main-top-navbar .main-top-navbar__right-navbar-el li {
     list-style: none;
     margin: 4px 4px;
     padding: 0 20px;
@@ -81,10 +71,6 @@ a {
     text-decoration: none;
 }
 
-/* .main-top-navbar .models-list li a,
-.main-top-navbar .right-navbar-el li a {
-} */
-
 /* Header */
 
 .header h1 {
@@ -93,13 +79,12 @@ a {
     padding: 2rem 0;
 }
 
+/* Side navbar */
+
 aside {
     z-index: 1;
     position: fixed;
-    /* height: 100vh; */
-    /* top: 0%; */
     left: 0%;
-    /* width: 300px; */
     padding-left: 10px;
     margin-top: 70px;
     display: flex;
@@ -108,26 +93,7 @@ aside {
     justify-content: center;
 }
 
-/* Side navbar */
-aside .left-navbar {
-    /* position: sticky; */
-    /* left: 0%; */
-    /* display: flex; */
-    /* z-index: 1; */
-    /* flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex: 1 0 10%; */
-    /* width: 20%; */
-}
-
-aside .left-navbar .left-navbar__items {
-    /* display: flex; */
-    /* align-items: ; */
-}
-
 aside .left-navbar .left-navbar__items li {
-    /* border-bottom: 3px solid #fff; */
     list-style: none;
 }
 
@@ -154,15 +120,10 @@ aside .left-navbar .left-navbar__items li {
     margin: 1rem;
 }
 
-/* .acceleration-rate .acceleration-item , .acceleration-rate p{
-    width: 2rem;
-    position: absolute;
-
-} */
-
 /* 
 !TODO: Put button in the right left corner
 */
+
 /* Message button */
 
 .flex-right-bottom {
@@ -185,8 +146,40 @@ aside .left-navbar .left-navbar__items li {
     align-self: flex-end;
 }
 
-/* .message-btn a {
-    border: 2px solid #fff;
-    flex: 0 1 auto;
-    align-self: flex-end;
-} */
+/* Second section */
+
+.second-section.align-row {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* align-content: space-between; */
+    /* height: 100vh; */
+}
+
+.align-row .section-img {
+    flex: 80%;
+}
+
+.align-row .section-img img {
+    width: 100%;
+}
+
+.section-right-side {
+    color: #333;
+    font-size: 1.4rem;
+    width: 20%;
+}
+
+.section-right-side {
+    padding: 32px 40px;
+}
+
+.align-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bottom-btns {
+    bottom: 0;
+}
