@@ -1,0 +1,67 @@
+/* Navbar-top */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-top-navbar .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 32px;
+    /* flex: 33%; */
+    /* flex-basis: 200px; */
+}
+
+/* .main-top-navbar .logo-container .logo {
+    width: 120px;
+} */
+
+.main-top-navbar .models-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-top-navbar .right-navbar-el {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.first-section {
+    background: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/d0cecbbf-1a20-4b48-b136-fb096af19515/bvlatuR/std/2880x1800/model-3-main-hero-a-desktop")
+        no-repeat center center/cover;
+    height: 100vh;
+}
+
+.main-top-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 35px;
+}
+
+.main-top-navbar .logo {
+    width: 120px;
+}
+
+.main-top-navbar .models-list,
+.main-top-navbar .right-navbar-el {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-top-navbar .models-list li,
+.main-top-navbar .right-navbar-el li {
+    list-style: none;
+    margin: 4px 8px;
+    padding: 0 20px;
+}
+
+/* .main-top-navbar .models-list li a,
+.main-top-navbar .right-navbar-el li a {
+} */
