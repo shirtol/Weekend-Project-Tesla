@@ -41,7 +41,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 20px 35px;
+    /* margin: 20px 35px; */
 }
 
 .main-top-navbar .logo {
@@ -65,3 +65,5 @@
 /* .main-top-navbar .models-list li a,
 .main-top-navbar .right-navbar-el li a {
 } */
+
+/* Side navbar */
