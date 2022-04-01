@@ -21,11 +21,11 @@ html {
 }
 
 .first-section {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .first-section .main-top-navbar {
-    font-size: 0.9rem;
+    font-size: 1.4rem;
     font-weight: 600;
 }
 
@@ -98,9 +98,15 @@ a {
 aside {
     z-index: 1;
     position: fixed;
+    top: 50%;
+    bottom: 50%;
     left: 0%;
-    padding-left: 10px;
-    margin-top: 70px;
+    padding-left: 1rem;
+    font-size: 2.4rem;
+    font-weight: 10;
+    /* height: 100vh; */
+
+    /* margin: auto; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,6 +117,9 @@ aside .left-navbar .left-navbar__items li {
     list-style: none;
 }
 
+aside .left-navbar .left-navbar__items li a {
+    color: #7e8491;
+}
 /* aside .left-navbar .left-navbar__items li a::after {
     content: "bkala";
 } */
@@ -132,6 +141,18 @@ aside .left-navbar .left-navbar__items li {
     position: absolute;
     padding-bottom: 3rem;
     width: 40%;
+}
+
+.car-performances .acceleration-rate .svg-speedometer-container {
+    height: min-content;
+}
+
+.car-performances .acceleration-rate .svg-speedometer-container svg {
+    /* position: absolute; */
+    left: 0;
+    bottom: 0;
+    margin-top: 0.4rem;
+    margin-right: 0.7rem;
 }
 
 .performance-item {
@@ -166,14 +187,8 @@ aside .left-navbar .left-navbar__items li {
 
 /* Second section */
 
-.second-section,
-.third-section {
+.second-section {
     color: #333;
-}
-
-.align-row {
-    display: flex;
-    justify-content: space-between;
 }
 
 .second-section .section-img {
@@ -189,12 +204,6 @@ aside .left-navbar .left-navbar__items li {
     font-size: 1.4rem;
     flex: 23%;
     padding: 32px 40px;
-}
-
-.align-col {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .bottom-btns {
@@ -215,11 +224,10 @@ aside .left-navbar .left-navbar__items li {
 }
 
 .order-btn {
-    color: #333;
     height: min-content;
     text-align: center;
     align-self: center;
-    border: 3px #333 solid;
+    border: 3px solid;
     border-radius: 20px;
     width: 200px;
     height: min-content;
@@ -244,4 +252,46 @@ aside .left-navbar .left-navbar__items li {
     width: 100%;
     justify-content: space-around;
     padding: 7rem 60rem;
+}
+
+/* Utilities */
+
+.btn-light {
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-dark {
+    color: #333;
+    border-color: #333;
+}
+
+.align-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.align-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.light-text-color {
+    color: #fff;
+}
+
+.dark-text-color {
+    color: #333;
+}
+
+.large-text {
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+.small-text {
+    font-size: 1.2rem;
+    padding-top: 0.8rem;
+    font-weight: 400;
 }
