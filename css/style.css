@@ -166,7 +166,7 @@ aside .left-navbar .left-navbar__items li a:hover::after {
     bottom: 0%;
     position: absolute;
     padding-bottom: 3rem;
-    width: 40%;
+    width: 50%;
 }
 
 .car-performances .acceleration-rate .svg-speedometer-container {
@@ -182,6 +182,7 @@ aside .left-navbar .left-navbar__items li a:hover::after {
 
 .performance-item {
     margin: 1rem;
+    flex: 25%;
 }
 
 .main-top-navbar__models-list li a,
