@@ -165,14 +165,40 @@ aside .left-navbar .left-navbar__items li a {
 
 /* Message button */
 
-.flex-right-bottom {
+.msg-button {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 3rem;
+    width: 5rem;
+    height: 5rem;
+    z-index: 1;
+    border: 1px #fff solid;
+    box-shadow: 0px 1px 1px 1px rgba(137, 137, 137, 0.8);
+    /* box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.8); */
+
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.msg-button svg {
+    align-self: center;
+    /* position: absolute;
+    bottom: 25%;
+    right: 25%;
+    left: 25%;
+    top: 25%; */
+}
+
+/* .flex-right-bottom {
     position: sticky;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-end;
-    /* align-content: center;
-    align-items: center; */
+
     height: min-content;
     width: min-content;
     bottom: 0%;
@@ -183,7 +209,7 @@ aside .left-navbar .left-navbar__items li a {
     border: solid 2px #4675aa;
     flex: 0 1 auto;
     align-self: flex-end;
-}
+} */
 
 /* Second section */
 
@@ -251,7 +277,7 @@ aside .left-navbar .left-navbar__items li a {
     align-items: center;
     width: 100%;
     justify-content: space-around;
-    padding: 7rem 60rem;
+    padding: 7rem 30rem;
 }
 
 /* Utilities */
@@ -287,11 +313,30 @@ aside .left-navbar .left-navbar__items li a {
 
 .large-text {
     font-size: 2.8rem;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .small-text {
     font-size: 1.2rem;
     padding-top: 0.8rem;
     font-weight: 400;
+    /* color: #acadaf; */
+}
+
+.car-performances.wide {
+    align-items: stretch;
+}
+
+.car-performances .performance-item {
+    width: max-content;
+    text-align: center;
+}
+
+.svg-speedometer-container {
+    width: min-content;
+    align-self: center;
+}
+
+.svg-speedometer-container p {
+    width: max-content;
 }
