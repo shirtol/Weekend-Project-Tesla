@@ -13,8 +13,11 @@
 
 body {
     color: #fff;
-    font-size: 62.5%;
     font-family: "gotham ssm";
+}
+
+html {
+    font-size: 62.5%;
 }
 
 .first-section {
@@ -163,7 +166,8 @@ aside .left-navbar .left-navbar__items li {
 
 /* Second section */
 
-.second-section {
+.second-section,
+.third-section {
     color: #333;
 }
 
@@ -172,15 +176,16 @@ aside .left-navbar .left-navbar__items li {
     justify-content: space-between;
 }
 
-.align-row .section-img {
+.second-section .section-img {
     flex: 77%;
 }
 
-.align-row .section-img img {
+.second-section .section-img img {
     width: 100%;
 }
 
-.section-right-side {
+.section-right-side,
+.section-bottom {
     font-size: 1.4rem;
     flex: 23%;
     padding: 32px 40px;
@@ -206,11 +211,10 @@ aside .left-navbar .left-navbar__items li {
     color: #333;
     font-size: 0.8rem;
     height: min-content;
-    /* align-self: center; */
     padding-left: 5px;
 }
 
-.bottom-btns .order-btn {
+.order-btn {
     color: #333;
     height: min-content;
     text-align: center;
@@ -221,4 +225,23 @@ aside .left-navbar .left-navbar__items li {
     height: min-content;
     padding: 8px;
     font-size: 1rem;
+}
+
+/* Third section */
+
+.third-section {
+    height: 100vh;
+}
+
+.third-section .section-img {
+    background: url("../images/third.jpg") no-repeat center center/cover;
+    height: 70%;
+    position: relative;
+}
+
+.third-section .section-img .car-performances {
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    padding: 7rem 60rem;
 }
