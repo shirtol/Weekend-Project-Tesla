@@ -93,7 +93,13 @@ a {
 .header h1 {
     display: flex;
     justify-content: center;
-    padding: 2rem 0;
+    /* padding: 2rem 0; */
+    font-size: 4rem;
+    color: #ffffff;
+    margin: 0 auto;
+    margin-top: 2.5rem;
+    padding: 0 2.4rem;
+    z-index: 1;
 }
 
 /* Side navbar */
@@ -258,7 +264,7 @@ aside .left-navbar .left-navbar__items li a {
     width: 200px;
     height: min-content;
     padding: 8px;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 /* Third section */
@@ -296,6 +302,27 @@ aside .left-navbar .left-navbar__items li a {
 
 .svg-speedometer-container p {
     width: max-content;
+}
+
+.third-section .section-bottom .img-explanation .align-row {
+    align-items: center;
+    justify-content: center;
+    /* width: 50%; */
+    align-self: center;
+}
+
+.third-section
+    .section-bottom
+    .img-explanation
+    .align-row
+    .img-explanation-container {
+    width: 50%;
+    padding: 2rem 8rem;
+}
+
+.third-section .section-bottom .img-explanation .align-row p {
+    height: max-content;
+    padding-left: 5rem;
 }
 
 /* Utilities */
