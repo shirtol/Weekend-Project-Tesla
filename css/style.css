@@ -186,6 +186,11 @@ aside .left-navbar .left-navbar__items li a:hover::after {
 .performance-item {
     margin: 1rem;
     flex: 25%;
+    flex-shrink: 0;
+}
+
+.order-btn {
+    flex-shrink: 0;
 }
 
 .main-top-navbar__models-list li a,
@@ -275,8 +280,7 @@ aside .left-navbar .left-navbar__items li a:hover::after {
     text-decoration: underline;
 }
 
-.section-right-side,
-.section-bottom {
+.section-right-side {
     font-size: 1.4rem;
     flex: 23%;
     padding: 32px 40px;
@@ -324,7 +328,7 @@ aside .left-navbar .left-navbar__items li a:hover::after {
 
 .third-section .section-img {
     background: url("../images/third.jpg") no-repeat center center/cover;
-    height: 70%;
+    height: 80%;
     position: relative;
     display: flex;
     justify-content: center;
@@ -363,7 +367,8 @@ aside .left-navbar .left-navbar__items li a:hover::after {
 .third-section .section-bottom .img-explanation {
     align-items: center;
     align-items: center;
-    margin: 0 27rem;
+
+    /* margin: 0 27rem; */
     /* justify-content: center; */
     /* width: 50%; */
     /* align-self: center; */
@@ -374,7 +379,7 @@ aside .left-navbar .left-navbar__items li a:hover::after {
     .img-explanation
     .align-row
     .img-explanation-container {
-    width: 50%;
+    /* width: 90rem; */
     padding: 0 8rem;
 }
 
@@ -388,6 +393,15 @@ aside .left-navbar .left-navbar__items li a:hover::after {
     /* padding: 1rem; */
 }
 
+.section-bottom.align-row {
+    font-size: 1.4rem;
+    padding: 32px 40px;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    align-self: center;
+}
+
 .third-section .section-bottom .img-explanation .align-row .learn-more {
     /* height: min-content; */
     padding-right: 0;
@@ -399,6 +413,8 @@ aside .left-navbar .left-navbar__items li a:hover::after {
     /* width: min-content; */
     align-self: flex-start;
     line-height: 2.2rem;
+    /* flex: 70%; */
+    /* flex-wrap: wrap; */
 }
 
 .img-explanation-container .bottom-btns {
