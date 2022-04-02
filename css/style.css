@@ -489,6 +489,10 @@ aside .left-navbar .left-navbar__items li a:hover::after {
     display: none;
 }
 
+#mobile-only-par-900px {
+    display: none;
+}
+
 /* Third section */
 
 .third-section {
@@ -659,6 +663,10 @@ aside .left-navbar .left-navbar__items li a:hover::after {
         display: none;
     }
 
+    #align-start-1200px {
+        justify-content: flex-start;
+    }
+
     /* Third page */
     .third-section .section-bottom {
         width: 100%;
@@ -668,7 +676,7 @@ aside .left-navbar .left-navbar__items li a:hover::after {
 @media (max-width: 900px) {
     /* Third page */
 
-    .third-section .small-text {
+    .third-section .performance-item .small-text {
         display: none;
     }
     /* .third-section {
@@ -690,10 +698,45 @@ aside .left-navbar .left-navbar__items li a:hover::after {
         display: none;
     } */
 
+    #mobile-only-par-900px {
+        display: block;
+        margin: 0;
+    }
+
+    .second-section .section-right-side .par-container {
+        display: none;
+    }
+
     .headeres.mobile-only-headers-900px {
         display: block;
         text-align: center;
     }
+
+    .third-section
+        .section-bottom
+        .img-explanation
+        .img-explanation-container
+        .headers {
+        display: none;
+    }
+
+    .headers.mobile-only-headers-900px {
+        display: block;
+    }
+
+    .second-section .bottom-btns {
+        flex-direction: row;
+        justify-content: flex-start;
+        /* align-items: center; */
+    }
+    /* 
+    .second-section .img-explanation {
+        flex-direction: row;
+    }
+
+    #align-start-1200px .mobile-only-btn {
+        order: 0;
+    } */
 
     .third-section .bottom-btns {
         flex-direction: row;
@@ -701,8 +744,12 @@ aside .left-navbar .left-navbar__items li a:hover::after {
         /* align-items: center; */
     }
 
-    .third-section .bottom-btns.align-row {
+    /* .third-section .bottom-btns.align-row {
         order: 1;
+    } */
+
+    .third-section .align-row .img-explanation-container {
+        order: 2;
     }
 
     /* .third-section .section-bottom .third-section-exp {
