@@ -335,7 +335,7 @@ aside .left-navbar .left-navbar__items li a:hover::after {
     width: 100%;
 }
 
-#rigid-tructure svg {
+#rigid-structure svg {
     position: absolute;
     top: 28.5%;
     left: 49.5%;
@@ -351,6 +351,36 @@ aside .left-navbar .left-navbar__items li a:hover::after {
     position: absolute;
     top: 58.8%;
     left: 52.8%;
+}
+
+#rigid-structure .text-container {
+    width: 5rem;
+    border-left: #171a20 3px solid;
+    height: 15%;
+    position: absolute;
+    color: #171a20;
+    top: 13.7%;
+    left: 49.8%;
+}
+
+#impact-protection .text-container {
+    width: 5rem;
+    border-left: #171a20 3px solid;
+    height: 20%;
+    position: absolute;
+    color: #171a20;
+    top: 30.8%;
+    left: 30.3%;
+}
+
+#very-low-rollover-risk .text-container {
+    width: 5rem;
+    border-left: #171a20 3px solid;
+    height: 20%;
+    position: absolute;
+    color: #171a20;
+    top: 59.8%;
+    left: 53.1%;
 }
 
 .section-right-side .headers {
