@@ -169,7 +169,7 @@ aside .left-navbar .left-navbar__items li a:hover::after {
     bottom: 0%;
     position: absolute;
     padding-bottom: 8rem;
-    width: 40%;
+    /* width: 20%; */
 }
 
 .car-performances .acceleration-rate .svg-speedometer-container {
@@ -183,10 +183,25 @@ aside .left-navbar .left-navbar__items li a:hover::after {
     margin-right: 0.7rem;
 }
 
+.first-section .car-performances {
+    align-self: center;
+}
+
 .performance-item {
     margin: 1rem;
-    flex: 25%;
+    /* flex: 25%; */
     flex-shrink: 0;
+    flex: 1;
+}
+
+.first-section .performance-item .large-text {
+    width: max-content;
+    align-self: center;
+}
+
+.first-section .performance-item .small-text {
+    width: max-content;
+    align-self: center;
 }
 
 .order-btn {
@@ -336,22 +351,33 @@ aside .left-navbar .left-navbar__items li a:hover::after {
 
 .third-section .section-img .car-performances {
     align-items: center;
-    width: 80%;
+    /* width: 45%; */
     justify-content: space-between;
-    padding: 7rem 30rem;
+    /* padding: 7rem 30rem; */
     align-self: center;
+    padding-bottom: 5rem;
+}
+
+.center-items {
+    display: flex;
+    justify-content: center;
 }
 
 .car-performances.wide {
-    align-items: stretch;
-    width: 100%;
+    /* align-items: stretch; */
+    width: 60%;
+    justify-content: space-around;
+    flex-shrink: 0;
+    /* flex-wrap: nowrap; */
 }
 
 .car-performances .performance-item {
     /* width: max-content; */
     text-align: center;
-    /* width: 100%; */
-    margin: 0 2rem;
+    /* width: 30%; */
+    margin: 4rem 5rem;
+    flex: 1;
+
     /* flex: ; */
 }
 
