@@ -323,9 +323,9 @@ aside .left-navbar .left-navbar__items li a:hover::after {
 /* Message button */
 
 .msg-button {
-    position: fixed;
-    bottom: 0;
-    right: 0;
+    position: sticky;
+    bottom: 9%;
+    left: 100%;
     margin: 3rem;
     width: 5rem;
     height: 5rem;
