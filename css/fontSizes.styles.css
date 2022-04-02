@@ -1,0 +1,19 @@
+/* Font sizes */
+
+:root {
+    --main-font-size: 1.4rem;
+    --large-text-font-size: 2.8rem;
+    --small-text-font-size: 1.2rem
+    --exp-small-text: 1.7rem;
+    --header-font-size: 4rem;
+    --aside-navbar-font-size: 2.4rem;
+    --aside-navbar-text: 1rem;
+    --tooltip-text: 1rem;
+    --btn-text: 1.2rem;
+    --large-text-640px-screen: 2rem;
+    --small-text-640px-screen: 1rem;
+}
+
+html {
+    font-size: 62.5%;
+}

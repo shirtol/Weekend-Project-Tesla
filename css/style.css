@@ -9,10 +9,6 @@ body {
     font-family: "gotham ssm";
 }
 
-html {
-    font-size: 62.5%;
-}
-
 /* Utilities */
 
 .btn-light {
@@ -69,13 +65,13 @@ html {
 }
 
 .large-text {
-    font-size: 2.8rem;
+    font-size: var(--large-text-font-size);
     font-weight: 700;
     width: max-content;
 }
 
 .small-text {
-    font-size: 1.2rem;
+    font-size: var(--small-text-font-size);
     padding-top: 0.8rem;
     font-weight: 400;
 }
@@ -86,14 +82,14 @@ html {
 
 .img-explanation__small-txt {
     color: var(--btn-light-hover-color);
-    font-size: 1.7rem;
+    font-size: var(--exp-small-text);
     font-weight: 300;
     letter-spacing: -0.4px;
 }
 
 .img-explanation__larger-txt {
     color: var(--btn-light-hover-color);
-    font-size: 2.8rem;
+    font-size: var(--large-text-font-size);
     font-weight: 800;
     line-height: 3.6rem;
 }
@@ -101,13 +97,13 @@ html {
 /* First section */
 
 .first-section {
-    font-size: 1.4rem;
+    font-size: var(--main-font-size);
 }
 
 /* Navbar-top */
 
 .first-section .main-top-navbar {
-    font-size: 1.4rem;
+    font-size: var(--main-font-size);
     font-weight: 600;
     line-height: 2rem;
     color: var(--secondary-white-color);
@@ -163,7 +159,7 @@ html {
 .main-top-navbar .main-top-navbar__right-navbar-el li {
     list-style: none;
     margin: 0.3rem;
-    padding: 0 1.4rem;
+    padding: 0 var(--main-font-size);
     letter-spacing: 0.1rem;
     width: max-content;
     height: 3rem;
@@ -188,7 +184,7 @@ a {
     display: flex;
     justify-content: center;
     /* padding: 2rem 0; */
-    font-size: 4rem;
+    font-size: var(--header-font-size);
     color: var(--secondary-white-color);
     margin: 0 auto;
     margin-top: 2.1rem;
@@ -205,7 +201,7 @@ aside {
     bottom: 50%;
     left: 0%;
     padding-left: 1rem;
-    font-size: 2.4rem;
+    font-size: var(--aside-navbar-font-size);
     font-weight: 10;
     display: flex;
     flex-direction: column;
@@ -224,7 +220,7 @@ aside .left-navbar .left-navbar__items li a {
 /* Left navbar after psuedo elements */
 aside .left-navbar .left-navbar__items li a::after {
     content: attr(section-name);
-    font-size: 1rem;
+    font-size: var(--aside-navbar-text);
     color: var(--aside-navbar-hover-color);
     font-weight: 800;
     display: none;
@@ -308,7 +304,7 @@ aside .left-navbar .left-navbar__items li a:hover::after {
     display: none;
     background: var(--tooltip-bg-color);
     position: absolute;
-    font-size: 1rem;
+    font-size: var(--tooltip-text);
     width: 8rem;
     height: 2rem;
     text-align: center;
@@ -418,7 +414,7 @@ aside .left-navbar .left-navbar__items li a:hover::after {
     content: "Rigid Structure";
     width: max-content;
     height: 4rem;
-    font-size: 1.4rem;
+    font-size: var(--main-font-size);
     font-weight: 800;
     padding-left: 5%;
 }
@@ -427,7 +423,7 @@ aside .left-navbar .left-navbar__items li a:hover::after {
     content: "Impact Protection";
     width: max-content;
     height: 4rem;
-    font-size: 1.4rem;
+    font-size: var(--main-font-size);
     font-weight: 800;
     padding-left: 5%;
 }
@@ -436,7 +432,7 @@ aside .left-navbar .left-navbar__items li a:hover::after {
     content: "Very Low Rollover Risk";
     width: max-content;
     height: max-content;
-    font-size: 1.4rem;
+    font-size: var(--main-font-size);
     font-weight: 800;
     padding-left: 5%;
     position: absolute;
@@ -451,7 +447,7 @@ aside .left-navbar .left-navbar__items li a:hover::after {
 
 .section-right-side .img-explanation .par-container {
     color: var(--paragraph-color);
-    font-size: 1.4rem;
+    font-size: var(--main-font-size);
     font-weight: 400;
     line-height: 2rem;
     padding: 1.6rem 0;
@@ -467,7 +463,7 @@ aside .left-navbar .left-navbar__items li a:hover::after {
 }
 
 .section-right-side {
-    font-size: 1.4rem;
+    font-size: var(--main-font-size);
     flex: 23%;
     padding: 32px 40px;
 }
@@ -485,7 +481,7 @@ aside .left-navbar .left-navbar__items li a:hover::after {
 
 .bottom-btns a p {
     color: var(--paragraph-color);
-    font-size: 1.2rem;
+    font-size: var(--btn-text);
     font-weight: 500;
     line-height: 2rem;
     height: max-content;
@@ -502,7 +498,7 @@ aside .left-navbar .left-navbar__items li a:hover::after {
     width: 200px;
     height: min-content;
     padding: 8px;
-    font-size: 1.2rem;
+    font-size: var(--btn-text);
 }
 
 .mobile-only-headers-1200px {
@@ -577,7 +573,7 @@ aside .left-navbar .left-navbar__items li a:hover::after {
 
 .align-row .img-explanation-container .bottom-btns .align-row-btn p {
     padding-left: 0;
-    font-size: 1.2rem;
+    font-size: var(--btn-text);
     font-weight: 500;
     line-height: 2rem;
     height: max-content;
@@ -585,7 +581,7 @@ aside .left-navbar .left-navbar__items li a:hover::after {
 }
 
 .section-bottom.align-row {
-    font-size: 1.4rem;
+    font-size: var(--main-font-size);
     padding: 32px 40px;
     justify-content: center;
     align-items: center;
@@ -623,7 +619,7 @@ aside .left-navbar .left-navbar__items li a:hover::after {
     }
 
     .menu-container {
-        background: var(--menu-btn-color-1200px);
+        background: var(--menu-btn-color-1200px-screen);
         width: 7rem;
         height: 3rem;
         border-radius: 1rem;
@@ -734,10 +730,10 @@ aside .left-navbar .left-navbar__items li a:hover::after {
 
 @media (max-width: 640px) {
     .large-text {
-        font-size: 2rem;
+        font-size: var(--large-text-640px-screen);
     }
 
     .small-text {
-        font-size: 1rem;
+        font-size: var(--small-text-640px-screen);
     }
 }
