@@ -738,7 +738,10 @@ aside .left-navbar .left-navbar__items li a:hover::after {
     }
 }
 
-@media (min-width: 400px) and (max-width: 640px) {
+@media (max-width: 640px) {
+    .main-top-navbar .main-top-navbar__logo-container {
+        padding-left: 0;
+    }
     .large-text {
         font-size: var(--large-text-640px-screen);
     }
@@ -761,6 +764,14 @@ aside .left-navbar .left-navbar__items li a:hover::after {
     #rigid-structure .text-container::after,
     #very-low-rollover-risk .text-container::after {
         font-size: 1rem;
+    }
+
+    .third-section
+        .section-bottom
+        .img-explanation
+        .align-row
+        .img-explanation-container {
+        padding: 0;
     }
     /* 
     .first-section {
