@@ -37,10 +37,6 @@ html {
     border-color: var(--btn-light-hover-color);
 }
 
-/* .svg-hover-dark:hover {
-    filter: invert(100%);
-} */
-
 .svg-hover-dark:hover #circle-plus-btn {
     fill: var(--svg-plus-btn-hover-color);
 }
@@ -136,12 +132,9 @@ html {
 
 .first-section {
     background: url("../images/first.jpg") no-repeat center center/cover;
-    /* background-clip: border-box; */
 
     height: 100vh;
     position: relative;
-    /* background-attachment: fixed;
-    background-size: cover; */
 }
 
 .main-top-navbar {
@@ -180,8 +173,6 @@ a {
 .main-top-navbar .main-top-navbar__models-list li:hover,
 .main-top-navbar .main-top-navbar__right-navbar-el li:hover {
     background: var(--main-navbar-hover-color);
-
-    /* display: flex; */
 }
 
 /* Header */
@@ -189,7 +180,6 @@ a {
 .header h1 {
     display: flex;
     justify-content: center;
-    /* padding: 2rem 0; */
     font-size: var(--header-font-size);
     color: var(--secondary-white-color);
     margin: 0 auto;
@@ -786,15 +776,6 @@ aside .left-navbar .left-navbar__items li a:hover::after {
 }
 
 /* Animations */
-
-/* .svg-speedometer-container svg #dial {
-    transform-origin: 0 18.03;
-    transform: rotate(345deg);
-}
-
-.svg-speedometer-container svg:hover #dial {
-    transform: rotate(0deg);
-} */
 
 #down-arrow {
     animation: hvr-wobble-arrow 4s infinite;
