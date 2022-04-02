@@ -225,6 +225,7 @@ aside .left-navbar .left-navbar__items li a:hover::after {
     bottom: 0%;
     position: absolute;
     padding-bottom: 4rem;
+    flex-wrap: wrap;
     /* width: 20%; */
 }
 
@@ -321,6 +322,10 @@ aside .left-navbar .left-navbar__items li a:hover::after {
     color: #333;
 }
 
+.mobile-only-headers {
+    display: none;
+}
+
 .second-section .section-img {
     flex: 80%;
 }
@@ -391,6 +396,10 @@ aside .left-navbar .left-navbar__items li a:hover::after {
     font-size: 1.2rem;
 }
 
+.mobile-only-headers-1200px {
+    display: none;
+}
+
 /* Third section */
 
 .third-section {
@@ -408,7 +417,7 @@ aside .left-navbar .left-navbar__items li a:hover::after {
 .third-section .section-img .car-performances {
     align-items: center;
     /* width: 45%; */
-    justify-content: space-between;
+    justify-content: flex-end;
     /* padding: 7rem 30rem; */
     align-self: center;
     padding-bottom: 3rem;
@@ -508,6 +517,10 @@ aside .left-navbar .left-navbar__items li a:hover::after {
     align-self: flex-start;
 }
 
+.mobile-only-headers-900px {
+    display: none;
+}
+
 /* Mobile friendly */
 
 @media (max-width: 1200px) {
@@ -546,13 +559,65 @@ aside .left-navbar .left-navbar__items li a:hover::after {
         flex-direction: row;
     }
 
-    .second-section .section-right-side .img-explanation,
-    .second-section .section-right-side .img-explanation .headers {
+    .second-section .section-right-side .img-explanation {
         order: 1;
+    }
+
+    .mobile-only-headers-1200px {
+        display: block;
+    }
+
+    .second-section .par-container {
+        margin-left: 4rem;
+    }
+    .second-section .section-right-side .img-explanation .headers {
+        display: none;
     }
 
     /* Third page */
     .third-section .section-bottom {
         width: 100%;
     }
+}
+
+@media (max-width: 900px) {
+    /* Third page */
+    /* .third-section {
+        position: relative;
+    } */
+
+    .third-section
+        .section-bottom
+        .img-explanation
+        .align-row
+        .img-explanation-container {
+        padding-left: 0;
+    }
+
+    .img-explanation .align-row {
+        flex-direction: column;
+    }
+    /* .third-section .section-bottom .headers {
+        display: none;
+    } */
+
+    .headeres.mobile-only-headers-900px {
+        display: block;
+        text-align: center;
+    }
+
+    .third-section .bottom-btns {
+        flex-direction: row;
+        justify-content: flex-start;
+        /* align-items: center; */
+    }
+
+    .third-section .bottom-btns.align-row {
+        order: 1;
+    }
+
+    /* .third-section .section-bottom .third-section-exp {
+        position: absolute;
+        bottom: 0;
+    } */
 }
