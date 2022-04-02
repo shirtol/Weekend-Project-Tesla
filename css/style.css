@@ -37,7 +37,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-left: 2.2rem;
+    padding-left: 3.2rem;
     /* width: 12rem;
     height: 2.4rem; */
 }
@@ -46,12 +46,14 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 7rem;
 }
 
 .main-top-navbar .main-top-navbar__right-navbar-el {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    padding-right: 3rem;
 }
 
 .first-section {
@@ -81,8 +83,9 @@ html {
 .main-top-navbar .main-top-navbar__models-list li,
 .main-top-navbar .main-top-navbar__right-navbar-el li {
     list-style: none;
-    margin: 2px 2px;
+    margin: 0.2rem;
     padding: 0 10px;
+    letter-spacing: 0.1rem;
 }
 
 a {
@@ -99,8 +102,8 @@ a {
     font-size: 4rem;
     color: #ffffff;
     margin: 0 auto;
-    margin-top: 2.5rem;
-    padding: 0 2.4rem;
+    margin-top: 2.1rem;
+    padding: 7.5rem 2.4rem;
     z-index: 1;
 }
 
@@ -165,8 +168,8 @@ aside .left-navbar .left-navbar__items li a:hover::after {
     justify-content: space-between;
     bottom: 0%;
     position: absolute;
-    padding-bottom: 3rem;
-    width: 50%;
+    padding-bottom: 8rem;
+    width: 40%;
 }
 
 .car-performances .acceleration-rate .svg-speedometer-container {
@@ -323,22 +326,29 @@ aside .left-navbar .left-navbar__items li a:hover::after {
     background: url("../images/third.jpg") no-repeat center center/cover;
     height: 70%;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .third-section .section-img .car-performances {
     align-items: center;
-    width: 100%;
-    justify-content: space-around;
+    width: 80%;
+    justify-content: space-between;
     padding: 7rem 30rem;
+    align-self: center;
 }
 
 .car-performances.wide {
     align-items: stretch;
+    width: 100%;
 }
 
 .car-performances .performance-item {
-    width: max-content;
+    /* width: max-content; */
     text-align: center;
+    /* width: 100%; */
+    margin: 0 2rem;
+    /* flex: ; */
 }
 
 .svg-speedometer-container {
