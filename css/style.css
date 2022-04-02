@@ -136,6 +136,8 @@ body {
 
     height: 100vh;
     position: relative;
+    /* background-attachment: fixed;
+    background-size: cover; */
 }
 
 .main-top-navbar {
@@ -614,6 +616,10 @@ aside .left-navbar .left-navbar__items li a:hover::after {
 
 @media (max-width: 1200px) {
     /* First page */
+
+    .main-top-navbar__models-list li {
+        display: none;
+    }
     .web-only {
         display: none;
     }
@@ -732,7 +738,7 @@ aside .left-navbar .left-navbar__items li a:hover::after {
     }
 }
 
-@media (max-width: 640px) {
+@media (min-width: 400px) and (max-width: 640px) {
     .large-text {
         font-size: var(--large-text-640px-screen);
     }
@@ -740,4 +746,24 @@ aside .left-navbar .left-navbar__items li a:hover::after {
     .small-text {
         font-size: var(--small-text-640px-screen);
     }
+
+    body {
+        max-width: 640px;
+        min-width: 400px;
+    }
+
+    .car-performances .performance-item {
+        margin: 2rem;
+        margin-bottom: 8rem;
+    }
+
+    #impact-protection .text-container::after,
+    #rigid-structure .text-container::after,
+    #very-low-rollover-risk .text-container::after {
+        font-size: 1rem;
+    }
+    /* 
+    .first-section {
+        flex-wrap: wrap;
+    } */
 }
