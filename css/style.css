@@ -354,7 +354,7 @@ aside .left-navbar .left-navbar__items li a:hover::after {
 }
 
 #rigid-structure .text-container {
-    width: 5rem;
+    width: 20%;
     border-left: #171a20 3px solid;
     height: 15%;
     position: absolute;
@@ -364,7 +364,7 @@ aside .left-navbar .left-navbar__items li a:hover::after {
 }
 
 #impact-protection .text-container {
-    width: 5rem;
+    width: 20%;
     border-left: #171a20 3px solid;
     height: 20%;
     position: absolute;
@@ -374,13 +374,43 @@ aside .left-navbar .left-navbar__items li a:hover::after {
 }
 
 #very-low-rollover-risk .text-container {
-    width: 5rem;
+    width: 20%;
     border-left: #171a20 3px solid;
     height: 20%;
     position: absolute;
     color: #171a20;
     top: 59.8%;
     left: 53.1%;
+}
+
+#rigid-structure .text-container::after {
+    content: "Rigid Structure";
+    width: max-content;
+    height: 4rem;
+    font-size: 1.4rem;
+    font-weight: 800;
+    padding-left: 5%;
+}
+
+#impact-protection .text-container::after {
+    content: "Impact Protection";
+    width: max-content;
+    height: 4rem;
+    font-size: 1.4rem;
+    font-weight: 800;
+    padding-left: 5%;
+}
+
+#very-low-rollover-risk .text-container::after {
+    content: "Very Low Rollover Risk";
+    width: max-content;
+    height: max-content;
+    font-size: 1.4rem;
+    font-weight: 800;
+    padding-left: 5%;
+    position: absolute;
+    text-align: end;
+    bottom: 0;
 }
 
 .section-right-side .headers {
