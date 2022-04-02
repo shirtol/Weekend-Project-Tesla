@@ -9,6 +9,10 @@ body {
     font-family: "gotham ssm";
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Utilities */
 
 .btn-light {
@@ -343,6 +347,12 @@ aside .left-navbar .left-navbar__items li a:hover::after {
 
 .msg-button svg {
     align-self: center;
+}
+
+#down-arrow {
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
 }
 
 /* Second section */
@@ -773,8 +783,45 @@ aside .left-navbar .left-navbar__items li a:hover::after {
         .img-explanation-container {
         padding: 0;
     }
-    /* 
-    .first-section {
-        flex-wrap: wrap;
-    } */
+}
+
+/* Animations */
+
+/* .svg-speedometer-container svg #dial {
+    transform-origin: 0 18.03;
+    transform: rotate(345deg);
+}
+
+.svg-speedometer-container svg:hover #dial {
+    transform: rotate(0deg);
+} */
+
+#down-arrow {
+    animation: hvr-wobble-arrow 4s infinite;
+}
+
+@keyframes hvr-wobble-arrow {
+    8.325% {
+        transform: translateY(8px);
+    }
+
+    16.67% {
+        transform: translateY(-6px);
+    }
+
+    25% {
+        transform: translateY(4px);
+    }
+
+    33.3% {
+        transform: translateY(-2px);
+    }
+
+    41.625% {
+        transform: translateY(1px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
 }
