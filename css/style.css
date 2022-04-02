@@ -328,10 +328,29 @@ aside .left-navbar .left-navbar__items li a:hover::after {
 
 .second-section .section-img {
     flex: 80%;
+    position: relative;
 }
 
 .second-section .section-img img {
     width: 100%;
+}
+
+#rigid-tructure svg {
+    position: absolute;
+    top: 28.5%;
+    left: 49.5%;
+}
+
+#impact-protection svg {
+    position: absolute;
+    top: 50.5%;
+    left: 30%;
+}
+
+#very-low-rollover-risk svg {
+    position: absolute;
+    top: 58.8%;
+    left: 52.8%;
 }
 
 .section-right-side .headers {
