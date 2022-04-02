@@ -25,9 +25,21 @@ html {
     color: #fff;
 }
 
+.btn-light:hover {
+    background: #fff;
+    color: #171a20;
+    border-color: #fff;
+}
+
 .btn-dark {
     color: #333;
     border-color: #333;
+}
+
+.btn-dark:hover {
+    background: #171a20;
+    color: #fff;
+    border-color: #171a20;
 }
 
 .align-row {
@@ -146,11 +158,21 @@ html {
     margin: 0.3rem;
     padding: 0 1.4rem;
     letter-spacing: 0.1rem;
+    width: max-content;
+    height: 3rem;
+    border-radius: 1rem;
 }
 
 a {
     color: #fff;
     text-decoration: none;
+}
+
+.main-top-navbar .main-top-navbar__models-list li:hover,
+.main-top-navbar .main-top-navbar__right-navbar-el li:hover {
+    background: #84878d;
+
+    /* display: flex; */
 }
 
 /* Header */
