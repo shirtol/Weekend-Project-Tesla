@@ -671,6 +671,10 @@ aside .left-navbar .left-navbar__items li a:hover::after {
 }
 
 @media (max-width: 900px) {
+    aside {
+        display: none;
+    }
+
     .third-section .performance-item .small-text {
         display: none;
     }
