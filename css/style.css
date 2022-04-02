@@ -18,6 +18,62 @@ html {
     font-size: 62.5%;
 }
 
+/* Utilities */
+
+.btn-light {
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-dark {
+    color: #333;
+    border-color: #333;
+}
+
+.align-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.align-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.light-text-color {
+    color: #fff;
+}
+
+.dark-text-color {
+    color: #333;
+}
+
+.large-text {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.small-text {
+    font-size: 1.2rem;
+    padding-top: 0.8rem;
+    font-weight: 400;
+}
+
+.img-explanation__small-txt {
+    color: #171a20;
+    font-size: 1.7rem;
+    font-weight: 300;
+    letter-spacing: -0.4px;
+}
+
+.img-explanation__larger-txt {
+    color: #171a20;
+    font-size: 2.8rem;
+    font-weight: 800;
+    line-height: 3.6rem;
+}
+
 /* First section */
 
 .first-section {
@@ -103,7 +159,7 @@ a {
     color: #ffffff;
     margin: 0 auto;
     margin-top: 2.1rem;
-    padding: 7.5rem 2.4rem;
+    padding: 3rem 0 2.4rem 2.4rem;
     z-index: 1;
 }
 
@@ -164,11 +220,11 @@ aside .left-navbar .left-navbar__items li a:hover::after {
 
 .car-performances {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
     bottom: 0%;
     position: absolute;
-    padding-bottom: 8rem;
+    padding-bottom: 4rem;
     /* width: 20%; */
 }
 
@@ -355,7 +411,7 @@ aside .left-navbar .left-navbar__items li a:hover::after {
     justify-content: space-between;
     /* padding: 7rem 30rem; */
     align-self: center;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
 }
 
 .center-items {
@@ -366,8 +422,10 @@ aside .left-navbar .left-navbar__items li a:hover::after {
 .car-performances.wide {
     /* align-items: stretch; */
     width: 60%;
+    height: 30%;
     justify-content: space-around;
     flex-shrink: 0;
+    flex-wrap: nowrap;
     /* flex-wrap: nowrap; */
 }
 
@@ -407,6 +465,7 @@ aside .left-navbar .left-navbar__items li a:hover::after {
     .img-explanation-container {
     /* width: 90rem; */
     padding: 0 8rem;
+    width: 100%;
 }
 
 .align-row .img-explanation-container .bottom-btns .align-row-btn p {
@@ -449,58 +508,51 @@ aside .left-navbar .left-navbar__items li a:hover::after {
     align-self: flex-start;
 }
 
-/* Utilities */
+/* Mobile friendly */
 
-.btn-light {
-    border-color: #fff;
-    color: #fff;
-}
+@media (max-width: 1200px) {
+    /* First page */
+    .web-only {
+        display: none;
+    }
 
-.btn-dark {
-    color: #333;
-    border-color: #333;
-}
+    .menu-container {
+        background: #53575d;
+        width: 7rem;
+        height: 3rem;
+        border-radius: 1rem;
+        display: flex;
+    }
 
-.align-row {
-    display: flex;
-    justify-content: space-between;
-}
+    .menu {
+        align-self: center;
+    }
 
-.align-col {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+    /* Second page */
+    .second-section {
+        flex-direction: column;
+        /* height: 100vh; */
+    }
 
-.light-text-color {
-    color: #fff;
-}
+    .second-section .section-img,
+    .second-section .section-right-side {
+        /* width: 50%; */
+        flex-shrink: 0;
+        align-self: center;
+        /* flex-basis: 30%; */
+    }
 
-.dark-text-color {
-    color: #333;
-}
+    .second-section .section-right-side {
+        flex-direction: row;
+    }
 
-.large-text {
-    font-size: 2.8rem;
-    font-weight: 700;
-}
+    .second-section .section-right-side .img-explanation,
+    .second-section .section-right-side .img-explanation .headers {
+        order: 1;
+    }
 
-.small-text {
-    font-size: 1.2rem;
-    padding-top: 0.8rem;
-    font-weight: 400;
-}
-
-.img-explanation__small-txt {
-    color: #171a20;
-    font-size: 1.7rem;
-    font-weight: 300;
-    letter-spacing: -0.4px;
-}
-
-.img-explanation__larger-txt {
-    color: #171a20;
-    font-size: 2.8rem;
-    font-weight: 800;
-    line-height: 3.6rem;
+    /* Third page */
+    .third-section .section-bottom {
+        width: 100%;
+    }
 }
