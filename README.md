@@ -1,4 +1,4 @@
-# Weekend-Project-Tesla
+# Weekend Project Tesla
 
 ## Description
 
