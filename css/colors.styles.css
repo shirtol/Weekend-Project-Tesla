@@ -1,0 +1,16 @@
+/* Global colors variables */
+
+:root {
+    --main-text-color: #fff;
+    --btn-light-hover-color: #171a20;
+    --btn-dark-color: #333;
+    --svg-plus-btn-hover-color: black;
+    --secondary-white-color: #ffffff;
+    --main-navbar-hover-color: #84878d;
+    --aside-navbar-color: #7e8491;
+    --aside-navbar-hover-color: #f4f4f4;
+    --msg-button-shadow: rgba(137, 137, 137, 0.8);
+    --paragraph-color: #393c41;
+    --menu-btn-color-1200px: #53575d;
+    --tooltip-bg-color: #32363f;
+}
