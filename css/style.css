@@ -42,6 +42,18 @@ html {
     border-color: #171a20;
 }
 
+/* .svg-hover-dark:hover {
+    filter: invert(100%);
+} */
+
+.svg-hover-dark:hover #circle-plus-btn {
+    fill: black;
+}
+
+.svg-hover-dark:hover #plus-btn {
+    fill: #ffffff;
+}
+
 .align-row {
     display: flex;
     justify-content: space-between;
@@ -290,13 +302,13 @@ aside .left-navbar .left-navbar__items li a:hover::after {
 
 .main-top-navbar__models-list li a,
 .main-top-navbar__right-navbar-el li a,
-.car-performances a {
+.order-btn {
     position: relative;
 }
 
 .main-top-navbar__models-list li a::after,
 .main-top-navbar__right-navbar-el li a::after,
-.car-performances a::after {
+.order-btn::after {
     content: attr(tooltip-content);
     display: none;
     background: #32363f;
@@ -305,13 +317,14 @@ aside .left-navbar .left-navbar__items li a:hover::after {
     width: 8rem;
     height: 2rem;
     text-align: center;
+    color: #fff;
     border: 1px #fff solid;
     right: 2rem;
 }
 
 .main-top-navbar__models-list li a:hover:after,
 .main-top-navbar__right-navbar-el li a:hover:after,
-.car-performances a:hover:after {
+.order-btn:hover:after {
     display: block;
     z-index: 1;
 }
